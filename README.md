@@ -59,12 +59,12 @@ $ git add . && git commit -m "Update" && git push
 
 ```
 
-*Re deploy the new code*
+*Re deploy the new code, watch until the second build is finish, and the new container is started then browse the URL again*
 
 ```
 $ oc start-build bc/simplenodejs
 $ oc get pods -w
-  NOTE: watch until the second build is finish and the new container is started then browse the URL again
+  NOTE: 
 
 [banjo@jumphost simplenodejs]$ oc get pods
 NAME                    READY   STATUS      RESTARTS   AGE
