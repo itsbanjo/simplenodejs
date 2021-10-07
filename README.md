@@ -2,7 +2,7 @@
 
 1. oc client
 2. git
-3. Personal Access token setup in git
+3. Personal Access token setup in github
 
 *Prep work*
 
