@@ -18,7 +18,7 @@
 
 const fetch = require('node-fetch');
 
-const webhookURL = '<INCOMING-WEBHOOK-URL>';
+const webhookURL = process.env.WEBHOOK_URL;
 
 const data = JSON.stringify({
   'text': 'Hello from a Node script!',
