@@ -17,6 +17,7 @@
 // [START hangouts_chat_node_webhook]
 
 const fetch = require('node-fetch');
+require('dotenv').config();
 
 const webhookURL = process.env.WEBHOOK_URL;
 
