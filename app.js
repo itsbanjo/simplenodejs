@@ -1,6 +1,7 @@
 const express = require('express');
-const { healthz } = require('express-healthz');
 const app = express();
+const expressHealth = require('express-health-middleware');
+app.use(expressHealth());
 
 
 const env = process.env;

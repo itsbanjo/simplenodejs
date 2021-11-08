@@ -14,6 +14,6 @@
     "mysql2": "^2.3.0",
     "node-fetch": "^2.6.6",
     "dotenv": "^10.0.0",
-    "express-health": "0.0.2"
+    "express-health-middleware": "^1.0.1"
   }
 }
