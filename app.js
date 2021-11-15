@@ -21,3 +21,11 @@ app.post('/quotes', (req, res) => {
   console.log('Hellooooooooooooooooo!')
 })
 
+app.get('/q/health', (req, res) => {
+  res.send('OK');
+})
+
+app.get('/q/ready', (req, res) => {
+  res.send('OK');
+})
+
