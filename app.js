@@ -1,14 +1,7 @@
-
-
 const express = require('express');
-
-import {
-  HealthcheckerDetailedCheck,
-  HealthcheckerSimpleCheck
-} from "./healthchecker/healthchecker";
-import { Dialects, HealthTypes } from "./interfaces/types";
-
 const app = express();
+const expressHealth = require('express-health-middleware');
+app.use(expressHealth());
 
 
 const env = process.env;
@@ -28,7 +21,3 @@ app.post('/quotes', (req, res) => {
   console.log('Hellooooooooooooooooo!')
 })
 
-
-app.get("/health-check/liveness", (_, res) => {
-  res.send(HealthcheckerSimpleCheck());
-});
