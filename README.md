@@ -25,7 +25,7 @@ git clone <your own git url>
 ```
 $ oc login -u username -p password api.uat.ocp4.openshift.integrate.zone:6443
 $ oc new-project simplenodejs-<your username>
-$ oc new-app nodejs-14~https://github.com/<your username>/simplenodejs 
+$ oc new-app nodejs-14~https://github.com/<your username>/simplenodejs --as-deployment-config
 $ oc create secret generic gchatwebhook --from-literal WEBHOOK_URL='https://yourwebhookurl'
 $ oc set env bc/nodejs --from secret/gchatwebhook
 $ oc set build-hook bc/nodejs --post-commit --script="node webhook"
