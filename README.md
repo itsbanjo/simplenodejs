@@ -4,21 +4,6 @@
 2. git
 3. Personal Access token setup in github
 
-*Prep work*
-
-1. Create a github account
-2. Go to https://github.com/itsbanjo/simplenodejs and hit "Fork"
-3. You will have a fork version in your git page.
-4. Save the URL that you will use later... its usualy https://github.com/<username>/simplenodejs
-4. Click "Code" button and copy the git URL or hit the copy button
-5. clone the repo in your PC using git
-
-```
-git clone <your own git url>
-```
-
-
-
 *Deploy*
 
 
