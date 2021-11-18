@@ -29,3 +29,6 @@ app.get('/q/ready', (req, res) => {
   res.send('OK');
 })
 
+app.use('/pug', (req, res, next) => {
+  res.render('index.pug', { name: env.NAME , age: env.AGE });
+});
