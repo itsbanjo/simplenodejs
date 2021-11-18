@@ -11,16 +11,6 @@ app.listen(8080, function() {
 })
 
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
-  // Note: __dirname is the current directory you're in. Try logging it and see what you get!
-  // Mine was '/Users/zellwk/Projects/demo-repos/crud-express-mongo' for this app.
-})
-
-app.post('/quotes', (req, res) => {
-  console.log('Hellooooooooooooooooo!')
-})
-
 app.get('/q/health', (req, res) => {
   res.send('OK');
 })
@@ -29,6 +19,6 @@ app.get('/q/ready', (req, res) => {
   res.send('OK');
 })
 
-app.use('/pug', (req, res, next) => {
+app.use('/', (req, res, next) => {
   res.render('index.pug', { name: env.NAME , age: env.AGE });
 });
