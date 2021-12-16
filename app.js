@@ -22,9 +22,9 @@ app.get('/q/ready', (req, res) => {
   res.send('OK');
 })
 
-app.use('/', (req, res, next) => {
-  res.render('index.pug', { name: env.NAME , age: env.AGE });
-});
+// app.use('/', (req, res, next) => {
+//  res.render('index.pug', { name: env.NAME , age: env.AGE });
+// });
 
 
 app.post("/", (req, res) => {
