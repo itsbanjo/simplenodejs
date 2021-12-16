@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const expressHealth = require('express-health-middleware');
 app.use(expressHealth());
+
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 
