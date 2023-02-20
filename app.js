@@ -22,14 +22,14 @@ app.get('/q/ready', (req, res) => {
 
 app.get('/', (req, res) => {
   var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress 
-  var serverip = dns.lookup( req.hostname , (err, value) => { 
+  var serverip = dns.lookup( req.hostname , ( err, serverip ) => { 
     if(err) { 
         console.log(err); 
         return; 
     } 
-    return value;
+    res.send('Hello world! Your IP address is:' + ip  + " You'requesting for " + req.hostname + " Server IP: " + serverip );
 }) 
-  res.send('Hello world! Your IP address is:' + ip  + " You'requesting for " + req.hostname + " Server IP: " + serverip );
+
 })
 
 
