@@ -22,7 +22,7 @@ app.get('/q/ready', (req, res) => {
 
 app.get('/', (req, res) => {
   var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress 
-  res.send('Hello world! Your IP address is:' + ip " You'requesting for " + req.hostname );
+  res.send('Hello world! Your IP address is:' + ip  + " You'requesting for " + req.hostname );
 })
 
 
