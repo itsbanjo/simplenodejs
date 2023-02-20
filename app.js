@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
         console.log(err); 
         return; 
     } 
-    res.send('Hello world! Your IP address is:' + ip  + " You'requesting for " + req.hostname + " Server IP: " + serverip );
+    res.send('Hello world! Your IP address is: ' + ip  + " You'requesting for " + req.hostname + " Server IP: " + serverip );
 }) 
 
 })
