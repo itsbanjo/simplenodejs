@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+a
 app.use(bodyParser.json());
 
 
@@ -19,9 +20,9 @@ app.get('/q/ready', (req, res) => {
   res.send('OK');
 })
 
-// app.use('/', (req, res, next) => {
-//  res.render('index.pug', { name: env.NAME , age: env.AGE });
-// });
+app.get('/', (req, res) => {
+  res.send('Hello world')
+})
 
 
 app.post("/", (req, res) => {
