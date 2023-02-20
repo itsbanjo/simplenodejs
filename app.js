@@ -20,7 +20,8 @@ app.get('/q/ready', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hello world');
+  var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress 
+  res.send('Hello world' + ip);
 })
 
 
