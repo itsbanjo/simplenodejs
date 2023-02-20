@@ -21,7 +21,7 @@ app.get('/q/ready', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hello world')
+  res.send('Hello world');
 })
 
 
